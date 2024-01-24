@@ -5,3 +5,7 @@ if ch=="sin":
     print(math.sin(rad))
 elif ch=="cos":
     print(math.cos(rad))
+elif ch=="tan":
+    print(math.tan(rad))
+elif ch=="sinh":
+    print(math.sinh(rad))
