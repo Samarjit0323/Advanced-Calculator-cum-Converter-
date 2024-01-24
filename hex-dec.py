@@ -1,3 +1,4 @@
+#Convert hexadecimal value to a decimal one
 char=["A","B","C","D","E","F"]
 charnum=[10,11,12,13,14,15]
 dec=0
