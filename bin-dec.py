@@ -1,5 +1,5 @@
-n=str(input("Enter a binary number:"))
-lst=list(n)
+num=str(input("Enter a binary number:"))
+lst=list(num)
 dec=0
 for a in range(len(lst)):
     k=int(lst[a])
@@ -8,6 +8,4 @@ for a in range(len(lst)):
         y=y*2
     part=k*y
     dec=dec+part
-if dec>=33:
-    print("Equivalent ASCII Character:",chr(dec))
 print("Equivalent decimal number:",dec)
