@@ -16,23 +16,31 @@ def permutation(n,r):
     n_r=factorial(n-r)
     perm=n_top/n_r
     return perm
-ch=str(input("Enter choice:"))
-if ch=="sin":
-    rad=float(input("Enter values in radians:"))
-    print(math.sin(rad))
-elif ch=="cos":
-    rad=float(input("Enter values in radians:"))
-    print(math.cos(rad))
-elif ch=="tan":
-    rad=float(input("Enter values in radians:"))
-    print(math.tan(rad))
-elif ch=="combination":
-    print("For nCr:")
-    n=int(input("Enter value of n:"))
-    r=int(input("Enter value of r:"))
-    print(n,"C",r,"=",combination(n,r))
-elif ch=="permutation":
-    print("For nPr:")
-    n=int(input("Enter value of n:"))
-    r=int(input("Enter value of r:"))
-    print(n,"P",r,"=",permutation(n,r))
+print("Choices:\nsin,cos,tan,combination,permutation")
+while True:
+    ch=str(input("Enter choice:"))
+    if ch=="sin":
+        rad=float(input("Enter values in radians:"))
+        print(math.sin(rad))
+    elif ch=="cos":
+        rad=float(input("Enter values in radians:"))
+        print(math.cos(rad))
+    elif ch=="tan":
+        rad=float(input("Enter values in radians:"))
+        print(math.tan(rad))
+    elif ch=="combination":
+        print("For nCr:")
+        n=int(input("Enter value of n:"))
+        r=int(input("Enter value of r:"))
+        print(n,"C",r,"=",combination(n,r))
+    elif ch=="permutation":
+        print("For nPr:")
+        n=int(input("Enter value of n:"))
+        r=int(input("Enter value of r:"))
+        print(n,"P",r,"=",permutation(n,r))
+    cont_ch=str(input(("Do you wish to continue?(y/n)")))
+    if cont_ch=="y":
+        continue
+    else:
+        break
+print("Thank You, visit again :)")
