@@ -11,6 +11,11 @@ def combination(n,r):
     r_bot=factorial(r)
     comb=n_top/(n_r*r_bot)
     return comb
+def permutation(n,r):
+    n_top=factorial(n)
+    n_r=factorial(n-r)
+    perm=n_top/n_r
+    return perm
 ch=str(input("Enter choice:"))
 if ch=="sin":
     rad=float(input("Enter values in radians:"))
@@ -26,3 +31,8 @@ elif ch=="combination":
     n=int(input("Enter value of n:"))
     r=int(input("Enter value of r:"))
     print(n,"C",r,"=",combination(n,r))
+elif ch=="permutation":
+    print("For nPr:")
+    n=int(input("Enter value of n:"))
+    r=int(input("Enter value of r:"))
+    print(n,"P",r,"=",permutation(n,r))
